@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSsEVFsT3iUE2n8svrhpNxNVjQiQ8GGptHRvg&usqp=CAU" type="image/x-icon"> 
+    <link href="./output.css" rel="stylesheet" />
+    <title>Survey Form</title>
+  </head>
+  <body class="bg-green-500">
+    <div id="main-container" class="flex px-48 pt-4">
+      <div class=" rounded-md flex flex-col gap-4 p-6 bg-slate-50">
+        <div class="flex flex-col gap-2">
+          <h2 class="text-4xl font-bold">Survey Form</h2>
+          <p class="leading-5">
+            Feel Free To Answer The Questions Below Based On Your Own Experience
+            And Opinion. If You Are Not Convenient In Answering A Particular
+            Question Please Skip It By Answering "No". Every Answer Would Be
+            Very Appreciated. Thank You For Your Time.
+          </p>
+        </div>
+
+        <div>
+          <form action="" class="lg:flex justify-between flex-wrap">
+
+            <!-- Left-container -->
+            <section class="flex flex-col">
+              <label for="userName" class="font-bold">Your Name</label>
+              <input
+                type="text"
+                id="userName"
+                class="border py-2 rounded-md pl-3 clickInput"
+                placeholder="Enter your name"
+              />
+
+              <label for="mailAddress" class="font-bold">Your Email Address</label>
+              <input
+                type="email"
+                id="mailAddress"
+                class="border py-2 rounded-md pl-3 clickInput"
+                placeholder="user@user.com"
+              />
+
+              <label for="phoneNum" class="font-bold">Your Phone Number</label>
+              <input
+                type="tel"
+                id="phoneNum"
+                class="border py-2 rounded-md pl-3 clickInput"
+                placeholder="9999999999"
+              />
+
+              <label for="state" class="font-bold">Where Do You Live?</label>
+              <select
+                id="state"
+                name="state"
+                class="mt-1 block w-full pl-3 pr-10 py-2 text-base clickInput border rounded-md"
+              >
+                <option value="">Select a state</option>
+                <option value="AP">Andhra Pradesh</option>
+                <option value="AR">Arunachal Pradesh</option>
+                <option value="AS">Assam</option>
+                <option value="BR">Bihar</option>
+                <option value="CT">Chhattisgarh</option>
+                <option value="GA">Goa</option>
+                <option value="GJ">Gujarat</option>
+                <option value="HR">Haryana</option>
+                <option value="HP">Himachal Pradesh</option>
+                <option value="JK">Jammu and Kashmir</option>
+                <option value="JH">Jharkhand</option>
+                <option value="KA">Karnataka</option>
+                <option value="KL">Kerala</option>
+                <option value="MP">Madhya Pradesh</option>
+                <option value="MH">Maharashtra</option>
+                <option value="MN">Manipur</option>
+                <option value="ML">Meghalaya</option>
+                <option value="MZ">Mizoram</option>
+                <option value="NL">Nagaland</option>
+                <option value="OR">Odisha</option>
+                <option value="PB">Punjab</option>
+                <option value="RJ">Rajasthan</option>
+                <option value="SK">Sikkim</option>
+                <option value="TN">Tamil Nadu</option>
+                <option value="TS">Telangana</option>
+                <option value="TR">Tripura</option>
+                <option value="UP">Uttar Pradesh</option>
+                <option value="UT">Uttarakhand</option>
+                <option value="WB">West Bengal</option>
+                <option value="AN">Andaman and Nicobar Islands</option>
+                <option value="CH">Chandigarh</option>
+                <option value="DN">Dadra and Nagar Haveli</option>
+                <option value="DD">Daman and Diu</option>
+                <option value="LD">Lakshadweep</option>
+                <option value="DL">Delhi</option>
+                <option value="PY">Puducherry</option>
+              </select>
+
+              <div>
+                <fieldset class="border rounded-md hover:border-gray-300 p-4">
+                  <legend class="ml-4 font-bold">Age</legend>
+
+                  <div class="flex gap-8">
+                    <div class="">
+                      <div>
+                        <input type="radio" name="age" id="age1" />
+                        <label for="age1">15-20</label>
+                      </div>
+
+                      <div>
+                        <input type="radio" name="age" id="age2" />
+                        <label for="age2">20-30</label>
+                      </div>
+
+                      <div>
+                        <input type="radio" name="age" id="age3" />
+                        <label for="age3">31-40</label>
+                      </div>
+                    </div>
+
+                    <div>
+                      <div>
+                        <input type="radio" name="age" id="age4" />
+                        <label for="age4">41-50</label>
+                      </div>
+
+                      <div>
+                        <input type="radio" name="age" id="age5" />
+                        <label for="age5">Prefer not to say</label>
+                      </div>
+                    </div>
+                  </div>
+                </fieldset>
+
+                <div class="flex flex-col">
+                  <div class="font-bold">How would you rate your proficiency in coding</div>
+                  <div>
+                    <input type="radio" id="level1" name="level" />
+                    <label for="level1">Beginner</label>
+                  </div>
+
+                  <div>
+                    <input type="radio" id="level2" name="level" />
+                    <label for="level2">Intermediate</label>
+                  </div>
+
+                  <div>
+                    <input type="radio" id="level3" name="level" />
+                    <label for="level3">Advance</label>
+                  </div>
+                </div>
+              </div>
+            </section>
+
+            <!-- Right-container -->
+            <section class="">
+              <div class="flex flex-col">
+                <div class="font-bold">Have you ever append in any coding contest?</div>
+                <div>
+                  <input type="radio" id="yes" name="options" />
+                  <label for="yes">Yes</label>
+                </div>
+
+                <div>
+                  <input type="radio" id="no" name="options" />
+                  <label for="no">No</label>
+                </div>
+              </div>
+
+              <div class="flex flex-col gap-4">
+                <label for="area1" class="font-bold"
+                  >Discuss what drives your passion for coding and outline your
+                  aspirations in the field.</label
+                >
+                <textarea
+                  name="area1"
+                  rows="3"
+                  id="area1"
+                  class="clickTextarea"
+                ></textarea>
+
+                <label for="area2" class="font-bold"
+                  >What are some of the challenges you face while coding
+                  ?</label
+                >
+                <textarea
+                  name="area2"
+                  rows="3"
+                  id="area2"
+                  class="clickTextarea"
+                ></textarea>
+
+                <label for="area3" class="font-bold"
+                  >Please list the Data Structures you have a strong
+                  understanding of.</label
+                >
+                <textarea
+                  name="area3"
+                  rows="3"
+                  id="area3"
+                  class="clickTextarea"
+                ></textarea>
+
+                <button
+                  type="submit"
+                  class="border bg-blue-700 hover:opacity-90 text-white p-2 rounded-md"
+                >
+                  Submit
+                </button>
+              </div>
+            </section>
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
